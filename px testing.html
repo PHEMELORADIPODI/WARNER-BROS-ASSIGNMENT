@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<head>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+    
+    margin: 1.5%;
+    background-color: rgb(139, 130, 130);
+}
+
+header{
+    
+
+    padding: 0.2%;
+    background-color: rgb(0, 0, 0);
+}
+
+nav{
+    
+    height: 100%;
+    width: 15%;
+    float: left;
+    background-color: rgb(0, 0, 0);
+}
+article{
+    box-shadow: 1px 1px 20px 10px  rgb(58, 54, 54) ;
+    padding: 1.5%;
+    width:92%;
+    height:auto;
+    float: right;
+    background-color: rgb(139, 130, 130);
+    border-radius: 10px;
+}
+
+footer{
+    border-radius: 10px;
+    clear:both;
+    background-color: rgb(0, 0, 0);
+}
+
+header,nav,article,footer{
+    margin: 2%;
+}
+.topnav{
+
+    vertical-align: middle;
+
+    margin-left: 2%;
+    align-self: center;
+    width: 95%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+.topnav a {
+    
+    margin-right:2%;
+    float: left;
+    display: block;
+    color: black ;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topnav a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.topnav a.active {
+    text-decoration-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.btm{
+    margin:  2%;
+    color: rgb(255, 255, 255);
+}
+.trm{
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+
+.grid-container{
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr); /* 4 columns */
+    grid-gap: 3%;
+    padding-bottom: 2%;
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+ .container{
+  position: relative;
+    background-color: rgb(70, 65, 65);
+    padding: 9px;
+   border-bottom-left-radius:10PX ;
+   border-bottom-right-radius:10PX;
+   border:thin solid #777;
+   width: 100%;
+   height:100%;
+   transition: 1s;
+}
+
+.container:hover{
+    box-shadow: 1px 1px 20px 10px  rgb(23, 23, 23);
+
+}
+
+.imgg{
+   
+   border-radius: 10px;
+}
+
+.like img,
+
+.like p {
+    
+    color: rgb(255, 255, 255);
+    padding: 1%;
+    display: inline-block;
+    margin: 0; 
+    vertical-align:middle; 
+}
+
+.description{
+    padding: 0;
+    text-decoration: none;
+    margin: 0;
+    color:white;
+    text-align: center;
+}
+ 
+.info{
+    
+    margin: 0.5%;
+    color:white;
+    text-align: center;
+    
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+.dropdown .dropbtn {
+    align-self: center;
+    font-size: 20px;  
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+.dropdown:hover .dropbtn {
+      color: rgb(0, 0, 0);
+   
+}
+  
+.dropdown-content {
+   
+    display: none;
+    position: absolute;
+    background-color: rgb(249, 249, 249);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: rgb(0, 0, 0);
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.ctrl{
+    vertical-align: middle;
+}
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div class="like">
+        <img src="LOGO.png"  width="100" height="100">
+     
+
+       
+       
+        <p style="color: rgb(255, 255, 255);">SEARCH <input type="text" placeholder="Search..."  size="60%"></p>
+      </div>
+
+      
+
+        <div class="topnav">
+            <a href="MAIN SITE.html" ><img src="nmovies.png"  class="ctrl" width="25" height="25">MOVIES</a>
+            <a href="tv shows.html"> <img src="TV.png"class="ctrl" width="25" height="25">TV SHOWS</a>
+            <a href="games.html"><img src="games.png" class="ctrl" width="25" height="25">GAMES & APPS</a>
+            <a href="COLLECTIONS.html"><img src="nbookmark.png" class="ctrl" width="25" height="25">COLLECTIONS</a>
+            <a href="FEEDBACK.html"><img src="FEEDBACK.png"class="ctrl" width="25" height="25">FEEDBACK</a>
+            <a href="about.html"><img src="help.png" class="ctrl" width="25" height="25">HELP</a>
+            <div class="dropdown">
+                <a href="about.html"   class="dropbtn">TAGS<i class="fa fa-caret-down"></i></a>
+                  
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">TRENDING</a>
+                  <a href="#">NEW RELEASES</a>
+                  <a href="#">COMING SOON</a>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <article> 
+
+    <h1 style="font-size: 45px;">MOVIES</h1>
+       
+
+        <div class="grid-container">
+            <div class="container">
+                <img  class="imgg" src="dkr.jpg" height="75%" width="100%"alt="GTR R29"class="image">
+              <div class="like">
+                <img src="rating.png" width="25" height="25" >
+                <p>8.4/10</p>
+              </div>
+              <div class="description">
+              <h4 ><a style="color: rgb(255, 255, 255);" href="DESCRIPTION.html">THE DARK KNIGHT RISES</a></h4>
+              
+              </div>
+            </div>
+
+           
+
+            <div class="container">
+               
+                 <img src="bb.jpeg" height="75%" width="100%"alt="GTR R29"class="image">
+               
+              <div class="like">
+              <img src="rating.png" width="25" height="25" >
+              <p>6.0/10</p>
+              </div>
+              <div class="description">
+                <p>BLUE BEETLE</p>
+                <a style="color: rgb(255, 255, 255);" href="blue beetle.html">MORE INFO</a>
+                </div>
+            </div>
+
+            <div class="container">
+               
+                <img src="nun.jpeg" height="75%" width="100%"alt="GTR R29"class="image">
+              
+             <div class="like">
+             <img src="rating.png" width="25" height="25" >
+             <p>5.6/10</p>
+             </div>
+             <div class="description">
+              <h4>THE NUN II</h4>
+              <a style="color: rgb(255, 255, 255);" href="THE NUN.html">MORE INFO</a>
+              </div>
+           </div>
+
+           <div class="container">
+               
+                 <img src="meg.jpeg" height="75%" width="100%"alt="GTR R29"class="image">
+               
+              <div class="like">
+              <img src="rating.png" width="25" height="25" >
+              <p>5.0/10</p>
+              </div>
+              <div class="description">
+                <h4>THE MEG 2</h4>
+                <a style="color: rgb(255, 255, 255);" href="THE MEG.html">MORE INFO</a>
+                </div>
+            </div>
+        
+
+       
+            <div class="container">
+               
+                <img src="GXK.jpg" height="75%" width="100%"alt="GTR R29"class="image">
+              
+             <div class="like">
+             <img src="rating.png" width="25" height="25" >
+             <p>6.5/10</p>
+             </div>
+             <div class="description">
+              <h4>GODZILLA VS KONG:THE NEW EMPIRE</h4>
+              <a style="color: rgb(255, 255, 255);" href="GOD VS KONG.html">MORE INFO</a>
+              </div>
+             
+        </div>
+
+            
+        
+    </article>
+
+
+    <footer>
+        
+        <div class="btm">
+       <a>about us</a>
+       <a>terms & conditions</a>
+       <a>contacts</a>
+       <a>privacy policy</a>
+       <a>follow us:</a>
+       <a href="#home"><img src="fb.png" width="35" height="35"></a>
+       <a href="#home"><img src="twitter.png" width="35" height="35"></a>
+       <a href="#home"><img src="insta.png" width="35" height="35"></a>
+       <a href="#home"><img src="yt.png" width="35" height="35"></a>
+        </div>
+        <p class="trm" >TM & © 2024 Warner Bros. Entertainment Inc. All rights reserved.</p>
+    
+    </footer>
+
+</body>
+</html>
